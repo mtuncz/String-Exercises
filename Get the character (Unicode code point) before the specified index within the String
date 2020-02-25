@@ -1,0 +1,14 @@
+public class Exercise {
+    public static void main(String[] args) throws FileNotFoundException {
+        String str = "Java Exercises!";
+        int unicode = str.codePointBefore(3);
+        System.out.println("Unicode point before index " + 3 + " is : " + unicode);
+
+        
+
+
+    }
+
+
+
+}
