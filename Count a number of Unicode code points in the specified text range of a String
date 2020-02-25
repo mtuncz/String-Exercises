@@ -1,0 +1,15 @@
+
+
+public class Exercise {
+    public static void main(String[] args) throws FileNotFoundException {
+        String str = "Java Exercises!";
+        int codePointCount = str.codePointCount(1,10);
+        System.out.println("Code point count between 1 and 10 is : " + codePointCount);
+        
+        /**
+         * The text range begins at the specified beginIndex
+         * and extends to the char at index endIndex - 1.
+         */
+    }
+
+}
