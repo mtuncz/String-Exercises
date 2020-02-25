@@ -1,0 +1,13 @@
+public class Exercise {
+    public static void main(String[] args) {
+        String columnist1 = "Stephen Edwin King";
+        String columnist2 = "Walter Winchell";
+        String columnist3 = "stephen edwin king";
+
+        System.out.println(columnist1 + " vs " + columnist2 + " : " + columnist1.equalsIgnoreCase(columnist2));
+        System.out.println(columnist1 + " vs " + columnist3 + " : " + columnist1.equalsIgnoreCase(columnist3));
+
+        
+    }
+
+}
