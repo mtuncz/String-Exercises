@@ -1,0 +1,12 @@
+
+public class Exercise {
+    public static void main(String[] args) {
+        String str1 = "This is exercise 1";
+        String str2 = "This is Exercise 1";
+
+        int result = str1.compareToIgnoreCase(str2);
+
+
+    }
+
+}
