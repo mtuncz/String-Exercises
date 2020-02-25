@@ -1,0 +1,16 @@
+public class Exercise {
+    public static void main(String[] args) {
+        String str1 = "PHP Exercises and Python Exercises";
+        String str2 = "and";
+
+        int idx = str1.indexOf(str2);
+
+        if(idx == -1){
+            System.out.println(str1 + " does not contain " + str2);
+        } else {
+            System.out.println(str1 + " contains " + str2);
+        }
+
+
+    }
+}
