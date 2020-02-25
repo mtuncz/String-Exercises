@@ -1,0 +1,14 @@
+public class Exercise {
+    public static void main(String[] args) {
+        String columnist1 = "Stephen Edwin King";
+        String columnist2 = "Walter Winchell";
+        String columnist3 = "Mike Royko";
+
+        System.out.println(columnist1 + " vs " + columnist2 + " : " + columnist1.equals(columnist2));
+        System.out.println(columnist1 + " vs " + columnist3 + " : " + columnist1.equals(columnist3));
+        System.out.println(columnist2 + " vs " + columnist3 + " : " + columnist2.equals(columnist3));
+        
+
+    }
+
+}
