@@ -1,0 +1,9 @@
+public class Exercise {
+    public static void main(String[] args) {
+        String str1 = "example.com", str2 = "Example.com";
+        StringBuffer strbuf = new StringBuffer(str1);
+
+        System.out.println(str1.contentEquals(strbuf));
+    }
+
+}
