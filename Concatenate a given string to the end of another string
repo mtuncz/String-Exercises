@@ -1,0 +1,12 @@
+public class Exercise {
+    public static void main(String[] args) {
+        String str1 = "PHP Exercises and ";
+        String str2 = "Python Exercises";
+
+        String res = str1.concat(str2);
+        System.out.println(res);
+
+
+    }
+
+}
