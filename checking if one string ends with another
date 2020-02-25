@@ -1,0 +1,22 @@
+public class Exercise {
+    public static void main(String[] args) {
+        String str1 = "Python Exercises";
+        String str2 = "Python Exercise";
+
+        String end_str = "se";
+
+        boolean endsWith = true;
+
+        int k = str2.length()-1;
+
+        for(int i = end_str.length()-1; i >= 0; i--){
+            if(str2.charAt(k) != end_str.charAt(i)){
+                endsWith = false;
+            }
+            k--;
+        }
+
+        System.out.println(endsWith);
+    }
+
+}
