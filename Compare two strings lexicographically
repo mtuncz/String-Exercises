@@ -1,0 +1,27 @@
+public class Exercise {
+    public static void main(String[] args) {
+        String str1 = "This is Exercise 1";
+        String str2 = "This is Exercise 2";
+
+        int result = str1.compareTo(str2);
+
+        if(result > 0){
+            System.out.println(str1 + " is greater than " + str2);
+        } else if (result < 0) {
+            System.out.println(str1 + " is smaller than " + str2);
+        } else {
+            System.out.println(str1 + " is equal to " + str2);
+        }
+
+    }
+
+    /**
+     * Java String compareTo() method is used for comparing two
+     * strings lexicographically. Each character of both the strings
+     * is converted into a Unicode value for comparison.
+     * If both the strings are equal then this method returns 0
+     * else it returns positive or negative value. The result is positive if the first string is
+     * lexicographically greater than the second string else the result would be negative.
+     */
+
+}
