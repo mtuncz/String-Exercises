@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Exercise {
+    public static void main(String[] args) throws FileNotFoundException {
+        String str = "Java Exercises!";
+        Scanner sc = new Scanner(System.in);
+
+        for(int i = 0 ; i < 5; i++){
+            System.out.print("What index do you want to get the char for: ");
+            int idx = sc.nextInt();
+            System.out.println();
+            if(idx < str.length()) {
+                System.out.println("Unicode Point at " + idx + " is : " + getCharacterUnicode(str, idx));
+            } else {
+                System.out.println("Not valid");
+            }
+
+        }
+
+    }
+
+    public static int getCharacterUnicode(String str, int index){
+        return str.codePointAt(index);
+    }
+
+
+}
