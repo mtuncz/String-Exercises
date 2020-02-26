@@ -1,0 +1,11 @@
+
+public class Eercise {
+    public static void main(String[] args) {
+        String str = "The quick brown fox jumps over the lazy dog.";
+
+        str = str.replace("d", "f");
+        System.out.println(str);
+
+    }
+
+}
