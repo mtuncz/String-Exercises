@@ -1,0 +1,49 @@
+import java.util.*;
+
+public class Eercise {
+    public static void main(String[] args) {
+        String P = "WX";
+        String Q = "YZ";
+
+        System.out.println(interL(P,Q));
+
+
+
+
+    }
+
+    public static HashSet<String> interL(String str1, String str2){
+        HashSet<String> set = new HashSet<>();
+        char[] arr1 = str1.toCharArray();
+        char[] arr2 = str2.toCharArray();
+        char[] arr3 = new char[str1.length() + str2.length()];
+
+        int pos = 0;
+        for(char c : arr1){
+            arr3[pos] = c;
+            pos++;
+        }
+
+        for(char c : arr2){
+            arr3[pos] = c;
+            pos++;
+        }
+
+
+        for(int i = 0; i < 100; i++){
+            StringBuilder sb = new StringBuilder();
+            for(int k =0; k<4; k++){
+                Random rand = new Random();
+                int t = rand.nextInt(4);
+                sb.append(arr3[t]);
+            }
+            if(!set.contains(sb.toString())){
+                set.add(sb.toString());
+            }
+
+        }
+        return set;
+
+    }
+
+}
