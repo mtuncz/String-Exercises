@@ -1,0 +1,10 @@
+public class Eercise {
+    public static void main(String[] args) {
+        String str = "Java Exercises.";
+
+        str = str.toUpperCase();
+        System.out.println(str);
+        
+    }
+
+}
