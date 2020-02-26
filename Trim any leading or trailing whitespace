@@ -1,0 +1,23 @@
+public class Eercise {
+    public static void main(String[] args) {
+        String TEXT = "      My high\n\n school,        the Illinois Mathematics and Science Academy, "
+                + "showed me that anything is possible and that you're never too young to think big. \r"
+                + "At 15, I worked as a computer programmer at the Fermi National Accelerator Laboratory, \t";
+
+        long start = System.nanoTime();
+        TEXT = removeWhitespaces(TEXT);
+        long end = System.nanoTime();
+        System.out.println(TEXT);
+        System.out.println("It took : " + (end-start));
+
+    }
+
+    public static String removeWhitespaces(String str){
+        if(str == null || str.isEmpty()){
+            return "";
+        }
+
+        return str.replaceAll("\\s", "");
+    }
+
+}
