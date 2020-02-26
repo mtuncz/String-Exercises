@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class Eercise {
+    public static void main(String[] args) {
+        String P = "WXT";
+        String Q = "YZK";
+
+
+        HashSet<String> set = new HashSet<String>();
+
+        allInterleavings("",P,Q,set);
+
+        set.stream().forEach(System.out::println);
+
+
+    }
+
+    public static void allInterleavings(String res, String P, String Q, HashSet<String> set){
+        if(P.length() == 0 && Q.length() == 0){
+            set.add(res);
+            return;
+        }
+
+        if(P.length() > 0){
+            allInterleavings(res + P.charAt(0), P.substring(1), Q, set);
+        }
+
+        if(Q.length() > 0){
+            allInterleavings(res + Q.charAt(0), P, Q.substring(1), set);
+        }
+    }
+
+
+}
