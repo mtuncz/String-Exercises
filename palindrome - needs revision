@@ -1,0 +1,41 @@
+public class Eercise {
+    public static void main(String[] args) {
+        String str1 = "thequickbrownfoxxofnworbquickthe";
+
+        pal(str1);
+
+
+
+    }
+
+    public static void pal(String str){
+
+        for(int i = 0; i < str.length(); i++){
+            for(int k = i; k < str.length(); k++){
+                String curSub = str.substring(i, k);
+                int l = 0;
+                int r = 0;
+                if(curSub.length() % 2 == 1){
+                    l = r = curSub.length()/2;
+                } else if(curSub.length() % 2 == 0){
+                    l = curSub.length()/2-1;
+                    r = curSub.length() / 2;
+                }
+
+                while(l >= 0 && r<curSub.length() && curSub.charAt(l) == curSub.charAt(r)){
+                    l--;
+                    r++;
+                }
+
+                String res = curSub.substring(l+1, r);
+                if(res.length() > 1){
+                    System.out.println("pal is: " + res);
+                }
+            }
+        }
+    }
+
+
+
+
+}
