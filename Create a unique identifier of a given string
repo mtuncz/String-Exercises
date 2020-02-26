@@ -1,0 +1,11 @@
+public class Exercise {
+    public static void main(String[] args) {
+        String str = "This is a sample String.";
+        String str2 = str;
+
+        int hash_code = str.hashCode();
+        System.out.println(hash_code);
+
+    }
+
+}
