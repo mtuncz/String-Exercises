@@ -1,0 +1,13 @@
+public class Eercise {
+    public static void main(String[] args) {
+        String str = "The quick brown fox jumps over the lazy dog.";
+
+        // Get a substring of the above string starting from
+        // index 10 and ending at index 26.
+
+        System.out.println(str.substring(10,26));
+        
+
+    }
+
+}
