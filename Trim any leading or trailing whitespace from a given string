@@ -1,0 +1,18 @@
+
+public class Eercise {
+    public static void main(String[] args) {
+        String str = "     Java Exercises.   ";
+
+        char [] a = str.toCharArray();
+
+        System.out.println(Arrays.toString(a));
+
+        str = str.trim();
+
+        char[] arr = str.toCharArray();
+
+        System.out.println(Arrays.toString(arr));
+
+    }
+
+}
