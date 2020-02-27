@@ -1,0 +1,24 @@
+public class Eercise {
+
+    public static void main(String[] args) {
+        String str = "PQR";
+        permutationWithRepetition(str);
+
+    }
+
+    private static void permutationWithRepetition(String str){
+        showPer(str, "");
+    }
+
+    private static void showPer(String str, String nSt){
+        if(nSt.length() == str.length()){
+            System.out.println(nSt);
+            return;
+        }
+
+        for(int i = 0; i < str.length(); i++){
+            showPer(str, nSt + str.charAt(i));
+        }
+    }
+
+}
